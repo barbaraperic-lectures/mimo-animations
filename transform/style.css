@@ -1,23 +1,25 @@
-.dialog-wrapper {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: hsl(0deg 0% 0% / 0.75);
-}
-
-.dialog-content {
-  width: 600px;
-  max-width: 100%;
+ul > li {
   height: 400px;
-  background: white;
-  border-radius: 6px;
 }
 
-.close-btn {
-  padding: 16px;
-  background: transparent;
-  border: none;
-  font-weight: bold;
+.nav-lists {
+  padding: 0;
+  display: flex;
+}
+
+.nav-list {
+  list-style-type: none;
+  flex: 1;
+  transition: all 300ms ease-in-out;
+}
+
+.nav-list:hover {
+  cursor: pointer;
+  transform: scale(1.5, 1);
+}
+
+.nav-list-item {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
