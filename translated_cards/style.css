@@ -1,0 +1,32 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 8px;
+  padding: 16px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  background: white;
+  border-radius: 8px;
+  border: 2px solid hsl(240deg 100% 75%);
+  transition: transform .5s;
+}
+
+a {
+  text-decoration: none;
+}
+
+.card p {
+  font-size: 20px;
+  /* width: 64px;
+  height: 64px; */
+}
+
+.card-link:hover .card{
+  transform: translateY(-5%);
+}
+
